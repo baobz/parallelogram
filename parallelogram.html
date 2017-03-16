@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>parallelogram</title>
+		<style>
+			.d1, .prev, .next {
+				width: 60px;
+				height: 20px;
+				position: relative;
+				background-color: #fdd;
+				display: inline-block;	
+				margin-left: 10px;
+				margin-right: 10px;
+				text-align: center;
+				color: #fff;
+			}
+			.d1:before, .next:before {
+				content:" ";
+				width: 0;
+				height: 0;
+				position: absolute;
+				right: 10px;
+				border-width: 10px; 
+				border-style: solid;
+				border-color: transparent #fdd #fdd transparent;
+				display: block;
+				margin-right:50px;
+			}
+		
+			.d1:after, .prev:after {
+				content: " ";
+				width: 0;
+				height: 0;
+				position: absolute;
+				top: 0;
+				right: -10px;
+				border-width: 10px;
+				border-style: solid;
+				border-color:#fdd transparent transparent #fdd;  
+				display: block;
+				margin-right: -10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="prev">prev</div>
+		<div class="d1">上海</div>
+		<div class="d1">北京</div>
+		<div class="d1">广州</div>
+		<div class="d1">安徽</div>
+		<div class="next">next</div>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>parallelogram</title>
+		<style>
+			.city {
+				display: inline-block;
+				padding: 5px 20px;
+				border: 1px solid #ddd;
+				color:#333;
+				transform: skew(-20deg);
+			}
+			/*逆向扭曲*/
+			.city div {
+				transform: skew(20deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="city">
+			<div>上海</div>
+		</div>
+		<div class="city">
+			<div>北京</div>
+		</div>
+		<div class="city">
+			<div>安徽</div>
+		</div>
+	</body>
+</html>
